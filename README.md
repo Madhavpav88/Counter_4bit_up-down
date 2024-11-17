@@ -1,5 +1,3 @@
-![Screenshot (40)](https://github.com/user-attachments/assets/77232465-2d2f-43b7-9e8c-c2626b47c187)# Counter_4bit_up-down
-
 ## Aim:
 
 To write a verilog code for 4bit up/down counter and verify the functionality using Test bench. 
