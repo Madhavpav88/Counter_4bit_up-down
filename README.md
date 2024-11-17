@@ -1,4 +1,4 @@
-# Counter_4bit_up-down
+![Screenshot (40)](https://github.com/user-attachments/assets/77232465-2d2f-43b7-9e8c-c2626b47c187)# Counter_4bit_up-down
 
 ## Aim:
 
@@ -59,6 +59,8 @@ Functional Simulation:
 */Program  for  4-Bit Up-Down Counter
 
 	Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
+![Screenshot (38)](https://github.com/user-attachments/assets/b8d4bfd2-44e4-46be-8afb-1e4211d6dd96)
+
 
 ## Creating Test bench:
 
@@ -80,6 +82,8 @@ It will invoke the nclaunch window for functional simulation we can compile,elab
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
 Click the cds.lib file and save the file by clicking on Save option
+![Screenshot (39)](https://github.com/user-attachments/assets/e7fd613c-ff6c-4f1d-98ef-da8e8ef41c98)
+
 
 ## Fig 4: cds.lib file Creation
 
@@ -88,6 +92,8 @@ Click the cds.lib file and save the file by clicking on Save option
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure
 
 	We are simulating verilog design without using any libraries
+![Screenshot (38)](https://github.com/user-attachments/assets/cad36188-ed78-4706-ae8c-1ea65f771b18)
+
 
 ## Fig 5: Selection of Don’t include any libraries
 
@@ -98,6 +104,7 @@ Click the cds.lib file and save the file by clicking on Save option
 	Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed.
 
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+![image](https://github.com/user-attachments/assets/e18c4981-8d1e-4c18-be0d-f7035d409c16)
 
 ## Fig 6: Nclaunch Window
 
@@ -122,6 +129,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
+![Screenshot (40)](https://github.com/user-attachments/assets/4ffc3ed2-26d0-446a-bb9f-b4e41b8fe21c)
+
 
 ## Fig 7: Compiled database in worklib
 
@@ -151,6 +160,8 @@ It contains statements that map logical library names to their physical director
 9.	It also establishes net connectivity and prepares all of this for simulation
     
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
+![Screenshot (40)](https://github.com/user-attachments/assets/2a2e85a4-48a4-4f9f-9dde-c6d7142361ec)
+
 
 ## Fig 8: Elaboration Launch Option
 
@@ -163,10 +174,16 @@ It contains statements that map logical library names to their physical director
 	Simulation allow to dump design and test bench signals into a waveform 
 
 	Steps for simulation – Run the simulation command with simulator options
+![Screenshot (41)](https://github.com/user-attachments/assets/a65a6986-d35c-4772-951c-293423233713)
+
 
 ## Fig 9: Design Browser window for simulation
+![Screenshot (42)](https://github.com/user-attachments/assets/036569a6-eb3f-4471-9483-f908f8ba2fd4)
+
 
 ## Fig 10: Simulation Waveform Window
+![Screenshot (43)](https://github.com/user-attachments/assets/ebbdd74e-f035-4ca0-add9-f54d39909722)
+
 
 ## Fig 11: Simulation Waveform Window
 
