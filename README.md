@@ -55,19 +55,33 @@ Functional Simulation:
 ### Verilog code for 4-Bit Up-Down Counter:
 
 `timescale 1ns / 1 ns
-module counter(clk,m,rst,count);
+
+module counter(clk,m, rst,count);
+
 input clk,m,rst;
+
 output reg [3:0] count;
+
 always@(posedge clk or negedge rst)
+
 begin
+
 if (!rst)
+
 count=0;
+
 else if(m)
+
 count=count+1;
+
 else
+
 count=count-1;
+
 end
+
 endmodule
+
 
 	Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 ![Screenshot (38)](https://github.com/user-attachments/assets/b8d4bfd2-44e4-46be-8afb-1e4211d6dd96)
@@ -79,29 +93,46 @@ endmodule
 
 ### Test-bench code for 4-Bit Up-Down Counter:
 
-`timescale 1ns / 1ns
-module counter_test;
-reg clk,rst,m;
+`timescale 1ns / 1ns 
+
+module counter_test; 
+
+reg clk,rst,m; 
+
 wire [3:0] count;
+
 initial
-begin
-clk=0;
+
+begin 
+
+clk=0; 
+
 rst=0;#5;
+
 rst=1;
+
 end
+
 initial
-begin
-m=1;
+
+begin 
+
+m=1; 
+
 #160 m=0;
+
 end
 
 counter counter1 (clk,m,rst, count);
 
 always #5 clk=~clk;
- 
-initial $monitor("Time=%t rst=%b clk=%b count=%b" , $time,rst,clk,count);
 
-initial
+initial 
+
+$monitor("Time=%t rst=%b clk=%b count=%b", $time, rst, clk, count); 
+
+initial 
+
 #320 $finish;
 
 endmodule
